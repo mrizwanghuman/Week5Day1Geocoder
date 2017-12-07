@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.riz.admin.week5day1geocoder.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etlat"
+        android:inputType=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude" />
+
+    <EditText
+        android:id="@+id/etlog"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude" />
+
+    <Button
+        android:id="@+id/btnGetaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getAddres"
+        android:text="Get Address" />
+
+    <TextView
+        android:id="@+id/tvgetAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+    <EditText
+        android:id="@+id/etAddres"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+
+    <Button
+        android:id="@+id/btngetlatlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getAddres"
+        android:text="Get Address" />
+    <TextView
+        android:id="@+id/tvShowLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <EditText
+        android:id="@+id/etAddressGoogleGEO"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+    <Button
+        android:onClick="useGoogleApi"
+        android:text="Using Google Api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvshowGoogleGeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etGoogleLati"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude" />
+    <EditText
+        android:id="@+id/etGoogleLangi"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longittude" />
+    <Button
+        android:onClick="useGoogleApiAddress"
+        android:text="Using Google Api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvshowGoogleGeoAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Go To Map"
+        android:onClick="gotoMapActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
